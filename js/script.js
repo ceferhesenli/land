@@ -9,6 +9,9 @@ window.addEventListener('scroll',() =>{
 
 
 
+
+
+
 const modal = document.getElementById("videoModal");
 const btn = document.getElementById("openVideo");
 const span = document.getElementsByClassName("close")[0];

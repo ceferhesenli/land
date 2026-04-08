@@ -12,12 +12,10 @@
   outline: none;
 }
 
-/* html {
-  font-size: 62.5%;
-  overflow-x: hidden;
-} */
+
 
 html, body {
+    font-size: 62.5%;
     overflow-x: hidden;
     width: 100%;
     margin: 0;
@@ -2048,7 +2046,7 @@ gap: 1.5rem;
         font-size: 58%;
     }
     .header {
-        padding: 2rem 5%;
+        padding: 1rem 5%;
     }
     section {
         padding: 10rem 5% 2rem;
@@ -2059,191 +2057,35 @@ gap: 1.5rem;
 }
 
 /* ============ TABLET (991px) ============ */
-@media (max-width: 991px) {
-    html {
-        font-size: 55%;
+@media (max-width: 768px) {
+     #menu-icon{
+        display: block;
     }
+    .menu{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 255px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--background-color);
+    transition: all 0.5s ease;
+    }
+  .menu.active {
+    right: 0;
+  }
     
+    .menu a{
+        display: block;
+        font-size: 22px;
+        text-align: center;
+    }
+   
     /* Header & Mobile Menu */
-    .header {
-        padding: 1.5rem 5%;
-    }
-    #menu-icon {
-        display: block;
-        cursor: pointer;
-    }
-    .navbar .menu {
-        position: fixed;
-        top: 0;
-        right: -100%; /* Gizli */
-        width: 260px;
-        height: 100vh;
-        background: #fff;
-        flex-direction: column;
-        padding: 5rem 2rem;
-        transition: 0.4s ease;
-        box-shadow: -10px 0 30px rgba(0,0,0,0.1);
-        z-index: 1001;
-    }
-    .navbar .menu.active {
-        right: 0; /* Aktiv olanda görünür */
-    }
-    .menu a {
-        margin: 1rem 0;
-        font-size: 1.8rem;
-        display: block;
-        width: 100%;
-    }
-    .dropdown, .dropdown-left {
-        position: static;
-        opacity: 1;
-        visibility: visible;
-        height: auto;
-        box-shadow: none;
-        padding-left: 2rem;
-        display: none; /* Kliklə açıla bilər və ya həmişə açıq saxlanıla bilər */
-    }
-    .menu li:hover .dropdown {
-        display: block;
-    }
-
-    /* Home Section */
-    .home-container {
-        flex-direction: column-reverse;
-        text-align: center;
-        gap: 4rem;
-    }
-    .text-box {
-        width: 100%;
-        align-items: center;
-    }
-    .text-box h3 {
-        font-size: 4.5rem;
-    }
-    .text-box p {
-        text-align: center;
-        max-width: 100%;
-    }
-    .image-box {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    .home-image img {
-        width: 80%;
-        max-width: 500px;
-    }
-    .home-left, .home-center, .home-right {
-        display: none; /* Uçan elementlər mobildə layout-u korlayır */
-    }
-
-    /* About Section */
-    .about-container {
-        flex-direction: column;
-        gap: 5rem;
-    }
-    .about-text-box, .about-image-box {
-        width: 100%;
-        text-align: center;
-    }
-    .about-image img {
-        width: 100%;
-    }
-    .about-image-two {
-        justify-content: center;
-    }
-    .about-image-two img {
-        width: 45%;
-    }
-    .about-img-text {
-        position: static;
-        width: 100%;
-        margin: 2rem 0;
-        box-shadow: none;
-        border: 1px solid #eee;
-    }
-
-    /* Icon List Grid */
-    .icon-list {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  
+   
+    
 }
 
 /* ============ MOBILE (768px) ============ */
-@media (max-width: 768px) {
-    section {
-        padding: 8rem 4% 2rem;
-    }
-    
-    /* Text Adjustments */
-    .text-box h3 {
-        font-size: 3.5rem;
-    }
-    .text-box p {
-        font-size: 1.8rem;
-    }
-
-    /* Grids to Single Column */
-    .icon-list, 
-    .about-number, 
-    .features-content, 
-    .feature-content-two,
-    .contine-container,
-    .grid,
-    .testimonal-container,
-    .pricing-container,
-    .footer-container {
-        grid-template-columns: 1fr !important;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    /* Business Section */
-    .business-container {
-        flex-direction: column;
-    }
-    .business-content, .busines-container {
-        width: 100%;
-    }
-    .business-img-box {
-        position: static;
-        width: 100%;
-        margin-top: 2rem;
-    }
-
-    /* Footer */
-    .footer-box {
-        width: 100%;
-        text-align: center;
-        align-items: center;
-    }
-}
-
-/* ============ SMALL MOBILE (480px) ============ */
-@media (max-width: 480px) {
-    html {
-        font-size: 50%;
-    }
-    .header .btn {
-        display: none; /* Çox kiçik ekranda əsas düyməni gizlədirik */
-    }
-    .text-box h3 {
-        font-size: 3rem;
-    }
-    .home-btns {
-        flex-direction: column;
-        width: 100%;
-    }
-    .btn1, .openvideo {
-        width: 100%;
-        text-align: center;
-    }
-    .number {
-        flex-direction: column;
-        gap: 2rem;
-    }
-    .about-text-box h3 {
-        font-size: 2.8rem;
-    }
-}
