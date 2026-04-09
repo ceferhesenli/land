@@ -2104,37 +2104,26 @@ textarea {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .features-container {
-    display: grid;
+.features-content{
+      display: grid;
     grid-template-columns: repeat(1, 1fr);
-    width: 100%;
-  }
-  .features-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 50%;
-  }
-  .features-box {
-    width: 100%;
-  }
 
-  .features-litl {
-    font-size: 1rem;
-  }
+}
 
-  .feature-content-two {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-  }
-
-  .feature-image img {
-    width: 100%;
-  }
+.feature-content-two{
+       display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
 
   .contine-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  
+  }
+
+  .feature-image img{
+width: 100%;
+margin-top: 1.5rem;
   }
 
   .contine-container-twoo {
