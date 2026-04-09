@@ -2115,6 +2115,10 @@ textarea {
     grid-template-columns: repeat(1, 1fr);
 }
 
+.feature-image-text{
+  display: none;
+}
+
   .contine-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -2188,11 +2192,6 @@ margin-top: 1.5rem;
           display:grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.accordionbox{
-  padding: 1rem 2rem;
-
-
-}
 .accordion-header h3{
 font-size: 1.8rem;
 width: 100%;
@@ -2220,8 +2219,10 @@ width: 100%;
 }
 
 .footer-container-2{
-                display:grid;
-    grid-template-columns: repeat(3, 1fr);
+display: flex;
+flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .footer-socialy{
   display: flex;
