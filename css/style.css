@@ -2214,9 +2214,19 @@ width: 100%;
 
 }
 .footer-container{
-  padding: 1rem 4% 0;
+  padding: 1rem 4% 1.8rem;
               display:grid;
     grid-template-columns: repeat(1, 1fr);
+}
+
+.footer-container-2{
+                display:grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.footer-socialy{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 }
 
