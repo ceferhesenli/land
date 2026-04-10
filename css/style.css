@@ -2201,6 +2201,9 @@ margin-top: 1.5rem;
 
 .footer-container{
   padding: 1rem 4% 1.8rem;
+  display: grid;
+      grid-template-columns: repeat(1, 1fr);
+
 }
 .footer-socialy{
   display: flex;
