@@ -2047,7 +2047,7 @@ textarea {
   }
 }
 
-/* ============ TABLET (991px) ============ */
+/* ============ TABLET (768px) ============ */
 @media (max-width: 768px) {
   #menu-icon {
     display: block;
@@ -2106,6 +2106,20 @@ textarea {
     width: 45%;
   }
 
+  .about-number-box p{
+ font-size: 1.5rem;
+
+  }
+  .home-center{
+    top: -5%;
+  }
+  .home-left{
+    left: -5%;
+  }
+   .home-right{
+    right: -5%;
+   }
+
   .icon-list {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -2122,6 +2136,16 @@ textarea {
     grid-template-columns: repeat(1, 1fr);
 }
 
+.feature-list-icon span{
+  padding:5px;
+}
+.feature-list-box p{
+  font-size: 1rem;
+}
+
+.feature-btn{
+  padding: 5px 10px;
+}
 .feature-image-text{
   display: none;
 }
@@ -2131,6 +2155,7 @@ textarea {
     grid-template-columns: repeat(1, 1fr);
   
   }
+ 
 
   .feature-image img{
 width: 100%;
@@ -2167,6 +2192,20 @@ margin-top: 1.5rem;
     display: none;
   }
 
+  .business-icon{
+    display: flex;
+    align-items: center;
+  }
+  .business-icon span{
+padding:5px;
+font-size: 1rem;
+  }
+  .business-icon p{
+    font-size: 1.5rem;
+  }
+  .busines-btn button{
+      padding: 10px 10px;
+  }
   .testimonal-container {
     display:grid;
     grid-template-columns: repeat(1, 1fr);
@@ -2205,7 +2244,23 @@ margin-top: 1.5rem;
   width: 100%;
 
 }
+.services-box h3{
+  font-size: 1rem;
+}
+.services-btn button{
+  padding: 10px 10px;
+  border-radius: 5px;
+}
 
+.pricing-hdr h4{
+  font-size: 1.2rem;
+    padding: 10px;
+      width: 30%;
+}
+.pricing-hdr-star{
+  display: flex;
+  align-items: center;
+}
 .footer-container{
   padding: 1rem 4% 1.8rem;
   display:flex;
